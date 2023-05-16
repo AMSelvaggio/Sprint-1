@@ -1,0 +1,519 @@
+@font-face {
+    font-family: "robot";
+    src: url('./assets/font/Roboto-Medium.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "robot2";
+    src: url('./assets/font/RobotoCondensed-Regular.ttf');
+}
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.principalContainer {
+
+    max-width: 1200px;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+/* --------HEADER----------- */
+
+
+.header {
+    background-image: url('./assets/img/header222.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    color: #f98c06b2;
+    overflow: hidden;
+    height: 250px;
+
+    margin: 0 80px 10px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.img-logo {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+
+    animation: animacion 8s 
+}
+
+
+
+@keyframes animacion{
+
+    0%{
+        transform: translate(0px, 0px);
+    }
+    
+    100%{
+        transform: translate(50px, 0px);
+    }
+    
+    
+    }
+
+
+.top {
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+.logo {
+
+    flex: 1 0 auto;
+
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex: 5 0 auto;
+
+}
+
+.a1 {
+    padding: 10px 40px;
+}
+
+.a1:hover {
+    color: #de07d7;
+
+}
+
+
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+
+
+}
+
+.a2 {
+
+    padding: 10px 10px;
+}
+
+.a2:hover {
+    color: #de07d7;
+
+}
+
+
+
+.bottom {
+    background-color: rgba(167, 155, 155, 0.208);
+    height: 75px;
+    margin: 0px 120px;
+
+    font-family: 'robot2', 'robot';
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.presentacion {
+    padding: 15px 0px;
+}
+
+/* ---------MAIN------------- */
+
+
+
+
+.main {
+    margin: 0 80px 10px 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #b3b2b06b;
+
+}
+
+
+
+
+/* -------ARTÍCULOS---------- */
+
+
+
+.articles {
+    background-color: #b3b2b06b;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: auto;
+
+}
+
+
+
+
+
+.article {
+
+
+    background-color: #f5f1f1;
+    margin: 1%;
+
+
+    flex: 1 1 40%;
+
+    font-family: "robot1", 'robot';
+    overflow: hidden;
+    padding: 20px;
+
+
+}
+
+h3 {
+
+    color: rgb(221, 204, 18);
+    font-size: 13px;
+
+    padding: 4px 0;
+    margin: -25px 10px;
+}
+
+
+
+.titulo1 {
+    background-color: #f2064d;
+    color: #fff;
+
+    padding: 10px;
+    height: auto;
+
+    border-top: 32px solid #fff;
+
+}
+
+.lore {
+
+    column-count: 2;
+    column-gap: 20px;
+
+}
+
+.navegador {
+
+    flex: 1 1 100%;
+
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'robot1', 'robot';
+    overflow: hidden;
+}
+
+
+/* ------PUBLICIDAD-------- */
+
+.aside {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    border-left: 10px #fff solid;
+
+}
+
+
+.publicidad {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+
+    font-size: 15px;
+    font-family: 'robot1', 'robot';
+    overflow: hidden;
+
+}
+
+.publicidad1 {
+
+    flex: 1 1 auto;
+    margin: 20px 10px 0 10px;
+
+    font-size: 15px;
+    font-family: 'robot1', 'robot';
+    justify-content: center;
+
+}
+
+
+.publicidad2 {
+
+
+    flex: 1 1 auto;
+    margin: -680px 10px 0 10px;
+
+    font-size: 15px;
+    font-family: 'robot1', 'robot';
+    overflow: hidden;
+
+
+}
+
+
+
+
+/* ---------FOOTER---------- */
+
+
+.footer {
+
+    margin: 0 80px 10px 80px;
+
+    display: flex;
+
+    background-color: #b3b2b06b;
+
+    justify-content: center;
+
+    border-top: 1px solid #fff;
+}
+
+.pie {
+    text-align: center;
+    flex: 0 1 95%;
+    background-color: #f5f1f1;
+
+
+
+
+
+}
+
+
+
+/* -----------------------MEDIA QUERIES--------------------- */
+
+
+@media all and (max-width:1019px) {
+
+
+
+
+    .top {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        height: auto;
+    }
+
+
+
+    .aside {
+        font-size: 14px;
+    }
+
+
+    .publicidad2 {
+
+        margin: -800px 10px 0 10px;
+
+
+
+    }
+}
+
+
+@media all and (max-width: 800px) {
+
+
+
+.header{
+
+    background-position: center;
+}
+
+
+    .top {
+        display: flex;
+        flex-flow: column wrap;
+
+        align-items: stretch;
+        height: auto;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    
+    .aside {
+        flex-direction: column;
+        height: 20vw;
+        border: none;
+        border-top: 5px solid #fff;
+        font-size: 8px;
+
+    }
+
+    .a1 {
+
+        padding: 10px;
+    }
+
+    .publicidad1 {
+        justify-content: center;
+        margin: auto;
+
+
+    }
+
+    .publicidad2 {
+
+
+        margin: -300px;
+
+    }
+
+
+
+
+}
+
+
+@media all and (max-width:700px) {
+
+    .bottom {
+
+        height: auto;
+
+        margin: 0px 80px;
+
+
+    }
+}
+
+
+
+
+@media all and (max-width:601px) {
+
+    .top {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        height: auto;
+
+
+    }
+
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .a1 {
+        font-size: 14px;
+    
+    }
+
+    .a2 {
+        font-size: 14px;
+    }
+
+
+    .lore {
+
+        column-count: 1;
+    
+    
+    }
+    
+
+    .bottom {
+        font-size: 14px;
+
+        margin: 0px 40px;
+    }
+
+    .nav {
+
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .redesSociales {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+}
+
+
+
+@media all and (max-width: 562px) {
+
+    .a1 {
+
+        font-size: 12px;
+    }
+
+    .a2 {
+        font-size: 12px;
+    }
+
+
+    .bottom {
+
+        font-size: 12px;
+
+    }
+
+
+}
+
+
+
+@media all and (max-width: 498px) {
+
+
+    .a1 {
+
+        font-size: 8px;
+    }
+
+    .a2 {
+        font-size: 8px;
+    }
+
+
+    .bottom {
+
+        font-size: 8px;
+
+    }
+
+
+}
